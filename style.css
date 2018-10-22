@@ -1,0 +1,172 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    background: #e9a208;
+  }
+  * {
+    box-sizing: inherit;
+   }
+  body {
+    padding: 0;
+    margin:0;
+    font-family: 'Amatic SC', cursive;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  .gameBody {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    z-index: 0;
+
+    }
+  
+  h1 {
+    text-align: center;
+    font-size: 10rem;
+    line-height:1;
+    margin-bottom: 0;
+  }
+  .scoreBoard {
+    text-align: center;
+    padding: 20px;
+  }
+  .buttonStart {
+    margin-top: 25px;
+    border: 2px solid rgb(201, 127, 16);
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    background-color: saddlebrown;
+
+  }
+  
+  .score {
+    background:rgba(255,255,255,0.2);
+    padding:0 3rem;
+    line-height:1;
+    border-radius:1rem;
+  }
+  
+  .game {
+    /* background: url(img/bg.png) ;  
+    background-size: cover;
+    background-repeat: no-repeat;  */
+    width:1100px;
+    height:300px;
+    display:flex;
+    flex-wrap:wrap;
+    margin:0 auto;
+    align-items: baseline;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 50px;
+    z-index: 1;
+  }   
+  .justiceHand {
+    background: url(img/colt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 204px;
+    height: 200px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+  }
+  .right {
+    transform:translateX(120px);
+    transition: all 0.3s;
+    }
+    .left {
+  
+      transform:translateX(-120px);
+      transition: all 0.3s;
+    }
+    .build2 > badass1 {
+      right: 200px;
+    }
+    .badass1 {
+        background: url(img/badass.png) bottom center no-repeat;
+        background-size: contain;
+        height: 140px;
+        width: 120px;
+        position: absolute;
+        right: 10px ;
+        bottom: 5px;
+       z-index: -1;
+    }
+    .badass2 {
+      background: url(img/badass.png) bottom center no-repeat;
+      background-size: contain;
+      height: 140px;
+      width: 120px;
+      position: absolute;
+      left: 10px ;
+      bottom: 5px;
+     z-index: -1;
+  }
+    .buildings {
+        position: absolute;
+        display: block;
+    }
+.vilian {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+.build1 {
+    background: url(img/bank.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 210px;
+    width: 185px;
+    position: relative;
+}
+.build2 {
+  background: url(img/hotel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 300px;
+  position: relative;
+  
+}
+.build3 {
+  background: url(img/house.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 180px;
+  position: relative; 
+}
+
+}
+.bBox2 {
+  width: 450px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+#blast {
+  background-size: cover;
+  height: 35px;
+  width: 35px;
+  z-index: 2;
+ 
+}
+.hidden {
+   background: url(img/blast.png);
+   
+}
+.power {
+  transform: rotate(10deg);
+  -ms-transform: rotate(10deg); 
+  -webkit-transform: rotate(10deg);
+}
